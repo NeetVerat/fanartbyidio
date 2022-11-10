@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hind", sans-serif;
+}
+
+/* ------------------------------------------------ Navbar ----------------------------------------------------------- */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  /* background: #141414; */
+  background: #000000;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#MenuItems {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#MenuItems li {
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+
+#MenuItems li a {
+  padding: 0.5rem 1rem;
+}
+
+#MenuItems li a:hover {
+  padding: 0.5rem 1rem;
+  /* background: #d266017d; */
+  background-image: linear-gradient(#3d4be6, #f8a8b5);
+  border-radius: 10rem;
+}
+
+.menu-icon {
+  display: none;
+  height: 3rem;
+}
+
+/* --------------------------------------------------- */
+
+.intro-img{
+  position: ;
+}
+
+/* ------------------------------------------------ */
+
+.masonry-grid {
+  display: grid;
+  /* It is split into 3 columns */
+  column-count: 4;
+
+  /* The space between columns */
+  column-gap: 8rem;
+
+  /* Misc */
+  width: 100%;
+
+  padding: 0 10rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.masonry-grid__item {
+  /* Prevent a column from breaking into multiple columns */
+  break-inside: avoid;
+
+  /* Misc */
+  margin-bottom: 8rem;
+  padding-bottom: 1rem;
+}
+
+.masonry-grid__item img{
+  height: 37.8rem;
+}
